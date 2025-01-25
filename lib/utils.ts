@@ -15,16 +15,6 @@ export function humanDuration(seconds: number) {
     return date.toISOString().substring(11, 19);
 }
 
-export function webDuration(seconds: number) {
-    // convert length in 00:00:00 format
-    const date = new Date(0);
-    date.setSeconds(seconds);
-    if (date.getHours()) {
-        return date.toTIMEString();
-    }
-    return date.toTIMEString();
-}
-
 export function naturalTime(time: string) {
     const now = new Date().getTime();
     const date = new Date(time).getTime();
