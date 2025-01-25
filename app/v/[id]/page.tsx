@@ -145,7 +145,7 @@ export default async function Video({ params }: PageProps) {
         />
         {/* ... */}
         </section>
-		<article itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+		<p itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
 <meta itemprop="author" content="Admin" />
 <meta itemprop="name" content=`{file.title}` />
 <meta itemprop="description" content=`{file.title}` />
@@ -156,7 +156,7 @@ export default async function Video({ params }: PageProps) {
 <meta itemprop="uploadDate" content=`{new Date(
             file.uploaded + ".000Z"
         ).toISOString()}` />
-	</article>
+	</p>
             <iframe
                 className="w-full h-[30vh] md:h-[55vh] lg:h-[70vh]"
                 src={`https://doodstream.com/e/${file.filecode}`}
