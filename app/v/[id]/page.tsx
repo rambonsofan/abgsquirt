@@ -163,6 +163,9 @@ export default async function Video({ params }: PageProps) {
             </Card>
             <h2 className="text-2xl font-bold text-center my-4" itemProp="video" itemScope itemType="http://schema.org/VideoObject">
 <meta itemprop="author" content="admin" />
+<meta itemProp="name" content=`{file.title}` />
+<meta itemProp="description" content=`{file.title}` />
+<meta itemProp="description" content=`{file.title} di {SITENAME} Video Bokep Indo Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma` />
 		    Related Video {file.title}
             </h2>
             <SearchCardList query={file.title.split(" ")[2]} />
