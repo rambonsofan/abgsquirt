@@ -82,36 +82,7 @@ export default async function Video({ params }: PageProps) {
     }
 
     const file = data.result[0];
-	const jsonLd = {
-        '@context': 'https://schema.org',
-        '@type': 'VideoObject',
-        name: `${file.title}`,
-        thumbnailUrl: file.splash_img,
-        description: `${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
-        url: `https://abgsquirt.pages.dev/v/${file.filecode}`,
-        embedUrl: `https://doodstream.com/e/${file.filecode}`,
-        uploadDate: new Date(
-            file.uploaded + ".000Z"
-        ).toISOString(),
-        publisher: {
-            '@type': 'Organization',
-            name: `${SITENAME}`,
-            logo: 'https://abgsquirt.pages.dev/favicon.ico'},
-            author: {
-                '@type': 'Person',
-                name: 'admin',
-                url: 'https://abgsquirt.pages.dev'
-              },
-	interactionStatistic: {
-            '@type': `InteractionCounter`,
-                userInteractionCount: `${file.views}`,
-            interactionType: {
-                '@type': `WatchAction`,
-                target: `https://bokepvcssange.pages.dev/v/${file.filecode}`
-            }  
-        }
-        }
-        const jsonLd2 = {
+        const jsonLd = {
         '@context': 'https://schema.org',
         '@type': 'Article',
         headline: `${file.title}`,
@@ -148,10 +119,6 @@ export default async function Video({ params }: PageProps) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd2) }}
         />
         {/* ... */}
         </section>
