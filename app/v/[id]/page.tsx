@@ -9,7 +9,7 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Metadata, ResolvingMetadata } from "next";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
-import { humanDuration, humanSize } from "@/lib/utils";
+import { webDuration, humanDuration, humanSize } from "@/lib/utils";
 import { SITENAME } from "@/lib/constants";
 import Script from "next/script";
 
@@ -128,7 +128,7 @@ export default async function Video({ params }: PageProps) {
 <meta itemProp="name" content={`${file.title}`} />
 <meta itemProp="description" content={`${file.title}`} />
 <meta itemProp="description" content={`${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`} />
-<meta itemProp="duration" content={`${file.length}`} />
+<meta itemProp="duration" content={`${webDuration(file.length)}`} />
 <meta itemProp="thumbnailUrl" content={`${file.splash_img}`} />
 <meta itemProp="embedURL" content={`https://doodstream.com/e/${file.filecode}`} />
 <meta itemProp="uploadDate" content={`${new Date(
