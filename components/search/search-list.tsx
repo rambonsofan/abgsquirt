@@ -12,7 +12,17 @@ const SearchCardList = async ({
     const data = await doodstream.search({ query });
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="author" content="Admin" />
+<meta itemprop="name" content=`{file.title}` />
+<meta itemprop="description" content=`{file.title}` />
+<meta itemprop="description" content=`{file.title} di {SITENAME} Video Bokep Indo Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma` />
+<meta itemprop="duration" content="P0DT0H8M43S" />
+<meta itemprop="thumbnailUrl" content=`{file.splash_img}` />
+<meta itemprop="embedURL" content=`https://doodstream.com/e/${file.filecode}` />
+<meta itemprop="uploadDate" content=`{new Date(
+            file.uploaded + ".000Z"
+        ).toISOString()}` />
             {banner && (
                 <div className="my-6 mb-8 text-center">
                     <h1 className="text-xs md:text-sm font-bold text-gray-600 uppercase tracking-wider">
