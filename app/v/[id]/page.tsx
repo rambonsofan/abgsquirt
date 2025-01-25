@@ -132,7 +132,8 @@ export default async function Video({ params }: PageProps) {
               }
         }
     return (
-        <div className="grid col-span-full gap-4 md:gap-4 md:mx-10" itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+        <div className="grid col-span-full gap-4 md:gap-4 md:mx-10">
+		<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject"
 	<meta itemprop="author" content="Admin" />
 <meta itemprop="name" content=`{file.title}` />
 <meta itemprop="description" content=`{file.title}` />
@@ -143,6 +144,7 @@ export default async function Video({ params }: PageProps) {
 <meta itemprop="uploadDate" content=`{new Date(
             file.uploaded + ".000Z"
         ).toISOString()}` />
+		</div>
         <section>
         {/* Add JSON-LD to your page */}
         <script
