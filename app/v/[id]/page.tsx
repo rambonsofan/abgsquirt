@@ -105,7 +105,7 @@ export default async function Video({ params }: PageProps) {
         const jsonLd2 = {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
-        headline: `${file.title}`,
+        name: `${file.title}`,
         image: file.splash_img,
         description: `${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
         url: `https://abgsquirt.pages.dev/v/${file.filecode}`,
@@ -128,7 +128,7 @@ export default async function Video({ params }: PageProps) {
 <meta itemProp="name" content={`${file.title}`} />
 <meta itemProp="description" content={`${file.title}`} />
 <meta itemProp="description" content={`${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`} />
-<meta itemProp="duration" content="P0DT0H8M43S" />
+<meta itemProp="duration" content={`${file.length}`} />
 <meta itemProp="thumbnailUrl" content={`${file.splash_img}`} />
 <meta itemProp="embedURL" content={`https://doodstream.com/e/${file.filecode}`} />
 <meta itemProp="uploadDate" content={`${new Date(
