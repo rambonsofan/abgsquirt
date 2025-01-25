@@ -162,16 +162,7 @@ export default async function Video({ params }: PageProps) {
             <p>{file.title} di {SITENAME} Video Bokep Indo Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma Jepang Jav Barat Simontok hub sotwe olmek avtube pijat pure gudang pemerkosaan rumah tobrut inggris ngintip vcs binor yandex update remaja {SITENAME} wiki raja bokeptube full porno abgsquirta simontok {file.title} playbokep indobokep xpanasonline indoh janda streaming jepang barat korea japan jav cina japanese china rusia arab india thailand hd anime hentai bokepind gudang avtub pijat sotwe rumah pemerkosaan inggris xpanas pure tobrut vcs ngintip binor {SITENAME} remaja yandex update perselingkuhan wiki raja full com porno indoh Hotbabes Big Tits Family Freeporn Ass Naked Celebs Nude Cam Hot Videos Fucking Free Porno Adult Movies Mom Freesex Nudelive Cams Women Stepmom Hotwife Bigtits Melons Tube Huge Tits Pornos Film x Titshits Pornofilme Nice Natural Fuq Girls Teen Sex Pornstars Tube Dick Jihad</p>
             </Card>
             <h2 className="text-2xl font-bold text-center my-4" itemProp="video" itemScope itemType="http://schema.org/VideoObject">
-<meta itemProp="author" content="Admin" />
-<meta itemProp="name" content=`{file.title}` />
-<meta itemProp="description" content=`{file.title}` />
-<meta itemProp="description" content=`{file.title} di {SITENAME} Video Bokep Indo Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma` />
-<meta itemProp="duration" content="P0DT0H8M43S" />
-<meta itemProp="thumbnailUrl" content=`{file.splash_img}` />
-<meta itemProp="embedURL" content=`https://doodstream.com/e/${file.filecode}` />
-<meta itemProp="uploadDate" content=`{new Date(
-            file.uploaded + ".000Z"
-        ).toISOString()}` />
+
 		    Related Video {file.title}
             </h2>
             <SearchCardList query={file.title.split(" ")[2]} />
