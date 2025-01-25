@@ -20,9 +20,9 @@ export function webDuration(seconds: number) {
     const date = new Date(0);
     date.setSeconds(seconds);
     if (date.getHours()) {
-        return date.toISO8601String().substring(11, 19);
+        return date.toISOString();
     }
-    return date.toISOString().substring(14, 19);
+    return date.toISOString());
 }
 
 export function naturalTime(time: string) {
