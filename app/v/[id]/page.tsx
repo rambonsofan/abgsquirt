@@ -102,6 +102,26 @@ export default async function Video({ params }: PageProps) {
                 url: 'https://abgsquirt.pages.dev'
               }
         }
+        const jsonLd2 = {
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        headline: `${file.title}`,
+        image: file.splash_img,
+        description: `${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`,
+        url: `https://abgsquirt.pages.dev/v/${file.filecode}`,
+        datePublished: new Date(
+            file.uploaded + ".000Z"
+        ).toISOString(),
+        publisher: {
+            '@type': 'Organization',
+            name: `${SITENAME}`,
+            logo: 'https://abgsquirt.pages.dev/favicon.ico'},
+            author: {
+                '@type': 'Person',
+                name: 'admin',
+                url: 'https://abgsquirt.pages.dev'
+              }
+        }
     return (
         <div className="grid col-span-full gap-4 md:gap-4 md:mx-10" itemProp="video" itemScope itemType="http://schema.org/VideoObject">
 <meta itemProp="author" content="admin" />
@@ -111,7 +131,7 @@ export default async function Video({ params }: PageProps) {
 <meta itemProp="duration" content="P0DT0H8M43S" />
 <meta itemProp="thumbnailUrl" content={`${file.splash_img}`} />
 <meta itemProp="embedURL" content={`https://doodstream.com/e/${file.filecode}`} />
-<meta itemProp="uploadDate" content={`{new Date(
+<meta itemProp="uploadDate" content={`${new Date(
             file.uploaded + ".000Z"
         ).toISOString()}`} />
 	<section>
@@ -119,6 +139,10 @@ export default async function Video({ params }: PageProps) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd2) }}
         />
         {/* ... */}
         </section>
