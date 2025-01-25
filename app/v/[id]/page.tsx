@@ -132,8 +132,19 @@ export default async function Video({ params }: PageProps) {
               }
         }
     return (
-        <div itemprop="video" itemscope itemtype="http://schema.org/VideoObject" className="grid col-span-full gap-4 md:gap-4 md:mx-10">
-        <section>
+        <div className="grid col-span-full gap-4 md:gap-4 md:mx-10">
+<article itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+<meta itemprop="author" content="Admin" />
+<meta itemprop="name" content=`{file.title}` />
+<meta itemprop="description" content=`{file.title}` />
+<meta itemprop="description" content=`{file.title} di {SITENAME} Video Bokep Indo Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma` />
+<meta itemprop="duration" content="P0DT0H8M43S" />
+<meta itemprop="thumbnailUrl" content=`{file.splash_img}` />
+<meta itemprop="embedURL" content=`https://doodstream.com/e/${file.filecode}` />
+<meta itemprop="uploadDate" content=`{new Date(
+            file.uploaded + ".000Z"
+        ).toISOString()}` />
+	<section>
         {/* Add JSON-LD to your page */}
         <script
           type="application/ld+json"
@@ -166,6 +177,7 @@ export default async function Video({ params }: PageProps) {
             </h2>
             <SearchCardList query={file.title.split(" ")[2]} />
 <Script src="https://js.juicyads.com/jp.php?c=947403z2v256s2x2x294z2b4&u=http%3A%2F%2Fwww.juicyads.rocks"/>
+	</article>
         </div>
     );
 }
