@@ -22,7 +22,7 @@ export function webDuration(seconds: number) {
     if (date.getHours()) {
         return date.toISOString();
     }
-    return date.toISOString());
+    return date.toISOString();
 }
 
 export function naturalTime(time: string) {
