@@ -133,7 +133,6 @@ export default async function Video({ params }: PageProps) {
         }
     return (
         <div className="grid col-span-full gap-4 md:gap-4 md:mx-10">
-
 	<section>
         {/* Add JSON-LD to your page */}
         <script
