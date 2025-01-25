@@ -133,7 +133,7 @@ export default async function Video({ params }: PageProps) {
         }
     return (
         <div className="grid col-span-full gap-4 md:gap-4 md:mx-10">
-		<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject"
+		<div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
 	<meta itemprop="author" content="Admin" />
 <meta itemprop="name" content=`{file.title}` />
 <meta itemprop="description" content=`{file.title}` />
