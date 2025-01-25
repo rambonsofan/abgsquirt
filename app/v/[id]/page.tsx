@@ -128,7 +128,7 @@ export default async function Video({ params }: PageProps) {
 <meta itemProp="name" content={`${file.title}`} />
 <meta itemProp="description" content={`${file.title}`} />
 <meta itemProp="description" content={`${file.title} di ${SITENAME} Video Bokep Indo Viral Terbaru Bocil Ngentot Jilbab Smp Mama Sma`} />
-<meta itemProp="duration" content={`${webDuration(file.length)}`} />
+<meta itemProp="duration" content={`${file.duration}`} />
 <meta itemProp="thumbnailUrl" content={`${file.splash_img}`} />
 <meta itemProp="embedURL" content={`https://doodstream.com/e/${file.filecode}`} />
 <meta itemProp="uploadDate" content={`${new Date(
