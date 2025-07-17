@@ -129,6 +129,8 @@ async function processThumbnails() {
             let altDoodcdnUrl = null;
 
             if (video.thumbnail.includes('/snaps/')) {
+                altDoodcdnUrl = video.thumbnail.replace('/snaps/', '/snaps/');
+            } else if (video.thumbnail.includes('/snaps/')) {
                 altDoodcdnUrl = video.thumbnail.replace('/snaps/', '/splash/');
             }
             
