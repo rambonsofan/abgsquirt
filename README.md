@@ -1,2 +1,1 @@
-# abgsquirt
-abgsquirt
+# [abgsquirt](https://abgsquirt.pages.dev)
